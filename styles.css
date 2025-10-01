@@ -13,16 +13,16 @@
    ============================================ */
 
 :root {
-  /* Color Palette - Dark & Futuristic */
-  --color-bg-primary: #0a0e27;
-  --color-bg-secondary: #151b3d;
-  --color-bg-tertiary: #1e2749;
-  --color-accent-primary: #00ffcc;
-  --color-accent-secondary: #ff00ff;
-  --color-text-primary: #e0e6ff;
-  --color-text-secondary: #a0a8c5;
-  --color-text-muted: #6b7394;
-  --color-border: #2a3358;
+  /* Color Palette - Pink & Girly */
+  --color-bg-primary: #ffe4f7;
+  --color-bg-secondary: #ffd1ea;
+  --color-bg-tertiary: #ffb6e6;
+  --color-accent-primary: #ff69b4;
+  --color-accent-secondary: #ffb6c1;
+  --color-text-primary: #c2185b;
+  --color-text-secondary: #ad1457;
+  --color-text-muted: #f8bbd0;
+  --color-border: #f06292;
 
   /* Typography */
   --font-family-primary: "Courier New", "Courier", monospace;
@@ -55,26 +55,26 @@
   --transition-slow: 400ms ease-in-out;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 255, 204, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 255, 204, 0.15);
-  --shadow-glow: 0 0 20px rgba(0, 255, 204, 0.3);
+  --shadow-sm: 0 2px 8px rgba(255, 105, 180, 0.12);
+  --shadow-md: 0 4px 16px rgba(255, 182, 193, 0.18);
+  --shadow-glow: 0 0 20px rgba(255, 182, 193, 0.35);
 }
 
 /* Light mode support */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-bg-primary: #f5f7ff;
-    --color-bg-secondary: #e8ecff;
-    --color-bg-tertiary: #d4dcf5;
-    --color-accent-primary: #00b894;
-    --color-accent-secondary: #d63aff;
-    --color-text-primary: #1a1f3a;
-    --color-text-secondary: #4a5578;
-    --color-text-muted: #7b8199;
-    --color-border: #c5cce0;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-    --shadow-glow: 0 0 20px rgba(0, 184, 148, 0.2);
+    --color-bg-primary: #fff0f6;
+    --color-bg-secondary: #ffe4f7;
+    --color-bg-tertiary: #ffd1ea;
+    --color-accent-primary: #ff69b4;
+    --color-accent-secondary: #ffb6c1;
+    --color-text-primary: #c2185b;
+    --color-text-secondary: #ad1457;
+    --color-text-muted: #f8bbd0;
+    --color-border: #f06292;
+    --shadow-sm: 0 2px 8px rgba(255, 105, 180, 0.10);
+    --shadow-md: 0 4px 16px rgba(255, 182, 193, 0.15);
+    --shadow-glow: 0 0 20px rgba(255, 182, 193, 0.25);
   }
 }
 
@@ -93,7 +93,7 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--color-text-primary);
-  background-color: var(--color-bg-primary);
+  background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-tertiary) 100%);
   min-block-size: 100svh;
 }
 
@@ -163,12 +163,12 @@ a:focus-visible {
   inset-block-start: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background-color: rgba(21, 27, 61, 0.9);
+  background-color: rgba(255, 182, 193, 0.85);
 }
 
 @media (prefers-color-scheme: light) {
   .site-header {
-    background-color: rgba(232, 236, 255, 0.9);
+    background-color: rgba(255, 240, 246, 0.9);
   }
 }
 
@@ -298,7 +298,7 @@ a:focus-visible {
 
 .hero {
   padding-block: var(--space-2xl);
-  background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  background: linear-gradient(135deg, var(--color-bg-tertiary) 0%, var(--color-bg-primary) 100%);
   position: relative;
   overflow: hidden;
 }
